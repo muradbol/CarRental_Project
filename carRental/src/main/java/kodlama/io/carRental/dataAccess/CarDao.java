@@ -7,4 +7,7 @@ import java.util.List;
 
 public interface CarDao extends JpaRepository<Car, Integer> {
   List <Car> findById(int id);
+
+  List<Car> getAll();
+
 }
